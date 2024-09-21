@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers/providers";
@@ -6,7 +6,10 @@ import { Analytics } from "@vercel/analytics/react";
 import Headers from "@/components/layout/Header";
 
 const inter = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], });
-
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#000000"
+}
 export const metadata: Metadata = {
   title: "NEST",
   description: "We combine attractive design with cutting-edge technology to deliver an exceptional experience.",
@@ -44,10 +47,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light">
-      <body className={inter.className}>
+    <html lang="en" className="dark">
+      <body className={`${inter.className}`}>
         <Providers>
-         <Headers/>
+          {/* <Headers /> */}
           {children}
           <Analytics />
         </Providers>
