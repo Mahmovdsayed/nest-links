@@ -47,6 +47,7 @@ const Page = () => {
       <Image
         className="rounded-lg z-40 mb-4"
         width={100}
+        isBlurred
         height={100}
         alt="nest-logo"
         draggable="false"
@@ -80,7 +81,7 @@ const Page = () => {
 
           <div className="my-4 flex flex-col space-y-5 items-center justify-center">
             {Links.map((fr, index) => (
-              <Card isBlurred isPressable key={index} className=''>
+              <Card  isPressable key={index} className=''>
                 <CardHeader className='flex flex-col items-start justify-center'>
                   <h4 className='mb-5 text-2xl font-semibold'>{fr.text}</h4>
                   <p className='text-tiny text-start'>{fr.des}</p>
