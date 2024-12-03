@@ -27,16 +27,16 @@ const Page = () => {
       des: "Welcome to our cinematic hub! Explore the world of movies and TV shows in a new light with our website powered by TMDb API. Dive into a vast database featuring details about films, actors, ratings, and more. Browse, save your favorite movies, and stay updated with the latest cinematic news. Immerse yourself in the seventh art effortlessly and enjoy a unique cinematic experience through our site!",
       url: "https://moviescafe.vercel.app/"
     },
-    {
-      text: "TikSaverPro",
-      des: "Welcome to our TikTok Video Downloader! Easily download high-quality TikTok videos without any watermark. Simply paste the video link and get your favorite content directly to your device. Enjoy hassle-free downloading!",
-      url: "https://tiksaverpro.vercel.app/"
-    },
-    {
-      text: "TikTok Downloader API",
-      des: "This API allows you to download media content from TikTok. You can retrieve video and audio download URLs, along with metadata about the video.",
-      url: "https://www.npmjs.com/package/tiktok-api-downloader"
-    },
+    // {
+    //   text: "TikSaverPro",
+    //   des: "Welcome to our TikTok Video Downloader! Easily download high-quality TikTok videos without any watermark. Simply paste the video link and get your favorite content directly to your device. Enjoy hassle-free downloading!",
+    //   url: "https://tiksaverpro.vercel.app/"
+    // },
+    // {
+    //   text: "TikTok Downloader API",
+    //   des: "This API allows you to download media content from TikTok. You can retrieve video and audio download URLs, along with metadata about the video.",
+    //   url: "https://www.npmjs.com/package/tiktok-api-downloader"
+    // },
   ];
 
 
