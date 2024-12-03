@@ -41,13 +41,13 @@ const Page = () => {
 
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center pt-10 bg-black">
+    <main className="relative min-h-screen flex flex-col items-center justify-center pt-10 bg-[#121212]">
       {/* <Noise /> */}
       {/* <video src='https://res.cloudinary.com/dxvpvtcbg/video/upload/v1726956082/knr0enfcjsct3yxl6zhw.mp4' className='fixed bg-fixed  top-0 left-0 object-cover object-center w-screen h-screen' autoPlay loop muted /> */}
       <Image
         className="rounded-lg z-40 mb-4"
         width={100}
-        isBlurred
+        
         height={100}
         alt="nest-logo"
         draggable="false"
