@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-import {  FaTiktok, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaTiktok, FaInstagram, FaFacebook } from "react-icons/fa";
 import { Button, Card, CardFooter, CardHeader, Chip, Image, image, Link } from "@nextui-org/react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -27,11 +27,11 @@ const Page = () => {
       des: "Welcome to our cinematic hub! Explore the world of movies and TV shows in a new light with our website powered by TMDb API. Dive into a vast database featuring details about films, actors, ratings, and more. Browse, save your favorite movies, and stay updated with the latest cinematic news. Immerse yourself in the seventh art effortlessly and enjoy a unique cinematic experience through our site!",
       url: "https://moviescafe.vercel.app/"
     },
-    // {
-    //   text: "TikSaverPro",
-    //   des: "Welcome to our TikTok Video Downloader! Easily download high-quality TikTok videos without any watermark. Simply paste the video link and get your favorite content directly to your device. Enjoy hassle-free downloading!",
-    //   url: "https://tiksaverpro.vercel.app/"
-    // },
+    {
+      text: "QR Code Generator",
+      des: "Use this tool to easily generate a QR code for any URL. Simply enter the URL in the input field below, and a unique QR code will be created instantly. Perfect for sharing links, websites, or digital content in a quick and accessible way!",
+      url: "https://dynamic-qrcode-generator.vercel.app/"
+    },
     // {
     //   text: "TikTok Downloader API",
     //   des: "This API allows you to download media content from TikTok. You can retrieve video and audio download URLs, along with metadata about the video.",
@@ -47,7 +47,7 @@ const Page = () => {
       <Image
         className="rounded-lg z-40 mb-4"
         width={100}
-        
+
         height={100}
         alt="nest-logo"
         draggable="false"
@@ -81,7 +81,7 @@ const Page = () => {
 
           <div className="my-4 flex flex-col space-y-5 items-center justify-center">
             {Links.map((fr, index) => (
-              <Card  isPressable key={index} className=''>
+              <Card isPressable key={index} className=''>
                 <CardHeader className='flex flex-col items-start justify-center'>
                   <h4 className='mb-5 text-2xl font-semibold'>{fr.text}</h4>
                   <p className='text-tiny text-start'>{fr.des}</p>
